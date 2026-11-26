@@ -1,10 +1,10 @@
-# ⚡ AI-Powered SQL Query Generator
+#  AI-Powered SQL Query Generator
 
 An AI-powered Natural Language to SQL application built using **Python, Streamlit, Groq API, Llama 3, and PostgreSQL**.
 
 Convert everyday English questions into SQL queries and retrieve database information without manually writing SQL statements.
 
-## 📌 Project Overview
+##  Project Overview
 
 Working with databases often requires knowledge of SQL, which can be challenging for non-technical users.
 
@@ -14,7 +14,7 @@ The application uses a Large Language Model (LLM) through the Groq API to unders
 
 The generated SQL query is then executed against a PostgreSQL database, and the retrieved results are displayed through an interactive Streamlit interface.
 
-## 🎯 Project Objectives
+##  Project Objectives
 
 - Convert natural language questions into SQL queries.
 - Integrate Large Language Models into database applications.
@@ -25,7 +25,7 @@ The generated SQL query is then executed against a PostgreSQL database, and the 
 - Explain generated SQL queries in understandable language.
 - Simplify database access for non-technical users.
 
-## ✨ Key Features
+##  Key Features
 
 ### 1. Natural Language to SQL
 
@@ -71,7 +71,7 @@ The generated SQL query is then executed against a PostgreSQL database, and the 
 - Creates customer-order relationships.
 - Provides sample data for testing.
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 | Technology | Purpose |
 |---|---|
@@ -84,7 +84,7 @@ The generated SQL query is then executed against a PostgreSQL database, and the 
 | Pandas | Query result processing |
 | Python-Dotenv | Environment variable management |
 
-## 🏗️ System Architecture
+##  System Architecture
 
 ```text
           User Natural Language Question
@@ -123,7 +123,7 @@ The generated SQL query is then executed against a PostgreSQL database, and the 
              Display Results in UI
 ```
 
-## 📂 Project Structure
+##  Project Structure
 
 ```text
 SQL_Query_Generator/
@@ -150,7 +150,7 @@ SQL_Query_Generator/
 | `requirements.txt` | Contains required Python dependencies |
 | `.env` | Stores sensitive configuration variables locally |
 
-## 🗄️ Database Design
+##  Database Design
 
 The project uses PostgreSQL with two main tables.
 
@@ -176,7 +176,7 @@ The project uses PostgreSQL with two main tables.
 
 **Relationship:** One customer can have multiple orders. The `customer_id` column connects the two tables.
 
-## ⚙️ Installation and Setup
+##  Installation and Setup
 
 ### Step 1: Clone the Repository
 
@@ -259,7 +259,7 @@ The application will open at:
 
 http://localhost:8501
 
-## 💡 Example Usage
+##  Example Usage
 
 Enter a question in natural language:
 
@@ -310,7 +310,7 @@ GROUP BY c.customer_id, c.first_name, c.last_name;
 
 *These are illustrative examples of the expected functionality.*
 
-## 🔄 Application Workflow
+##  Application Workflow
 
 1. User enters a question in natural language.
 2. Streamlit receives the question.
@@ -322,7 +322,7 @@ GROUP BY c.customer_id, c.first_name, c.last_name;
 8. Retrieved records are converted into a Pandas DataFrame.
 9. Results are displayed in the Streamlit interface.
 
-## 🧪 Testing
+##  Testing
 
 Run the AI integration diagnostic script:
 
@@ -332,7 +332,7 @@ python test_ai.py
 
 This checks the Groq API configuration and tests whether the application can generate a structured SQL response.
 
-## 🔐 Security Considerations
+##  Security Considerations
 
 - Store API keys and database credentials in environment variables.
 - Never expose database credentials in source code.
@@ -344,7 +344,7 @@ This checks the Groq API configuration and tests whether the application can gen
 
 **Important:** The current implementation executes generated SQL directly. It should not be exposed to untrusted users or production databases without SQL validation, read-only database permissions, and additional execution safeguards.
 
-## 🌍 Real-World Applications
+##  Real-World Applications
 
 - Business intelligence systems.
 - Database analytics platforms.
@@ -354,7 +354,7 @@ This checks the Groq API configuration and tests whether the application can gen
 - Internal data assistants.
 - Natural language database interfaces.
 
-## 🔮 Future Enhancements
+##  Future Enhancements
 
 - Add SQL query validation and safety checks.
 - Support multiple database systems.
@@ -367,7 +367,7 @@ This checks the Groq API configuration and tests whether the application can gen
 - Introduce query optimization suggestions.
 - Deploy the application using Docker and cloud services.
 
-## 👨‍💻 Author
+##  Author
 
 **Phani Kumar**
 
@@ -378,6 +378,6 @@ AI/ML & Generative AI Developer
 
 ---
 
-⭐ If you find this project useful, consider giving it a star!
+ If you find this project useful, consider giving it a star!
 
 **Built with Python, Streamlit, Groq API, Llama 3, and PostgreSQL.**
